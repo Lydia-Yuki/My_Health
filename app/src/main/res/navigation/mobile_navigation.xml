@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myhealth.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_foodFragment"
+            app:destination="@id/foodFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_medicineFragment"
+            app:destination="@id/medicineFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_sugarFragment"
+            app:destination="@id/sugarFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_lowBPFragment"
+            app:destination="@id/lowBPFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_records"
+        android:name="com.example.myhealth.ui.records.RecordsFragment"
+        android:label="Records"
+        tools:layout="@layout/fragment_records" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.myhealth.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.myhealth.ui.options.FoodFragment"
+        android:label="FoodFragment" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.myhealth.ui.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/medicineFragment"
+        android:name="com.example.myhealth.ui.options.MedicineFragment"
+        android:label="MedicineFragment" />
+    <fragment
+        android:id="@+id/sugarFragment"
+        android:name="com.example.myhealth.ui.options.SugarFragment"
+        android:label="SugarFragment" >
+        <action
+            android:id="@+id/action_sugarFragment_to_sugarData"
+            app:destination="@id/sugarData" />
+    </fragment>
+    <fragment
+        android:id="@+id/lowBPFragment"
+        android:name="com.example.myhealth.ui.options.LowBPFragment"
+        android:label="LowBPFragment" />
+    <fragment
+        android:id="@+id/sugarData"
+        android:name="com.example.myhealth.ui.options.SugarData"
+        android:label="SugarData" />
+</navigation>

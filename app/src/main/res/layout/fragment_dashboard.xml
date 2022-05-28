@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="Enter your BP reading for today"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:textFontWeight="150"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/purple_500"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"/>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"/>
+
+    <EditText
+        android:id="@+id/bp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName|number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        tools:hint="First BP Record"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/bp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:inputType="none|textPersonName|number"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        tools:hint="Second BP Record"
+        android:gravity="center_horizontal"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text.Bullet">
+        <item name="android:background">@drawable/bullet</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="Text">Text</style>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/options_navigation"
+    app:startDestination="@+id/options_blank">
+
+    <fragment
+        android:id="@+id/options_bp"
+        android:name="com.example.myhealth.ui.dashboard.DashboardFragment"
+        android:label="BP"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/options_blank"
+        android:name="com.example.myhealth.ui.options.BlankFragment"
+        android:label="BP"
+        tools:layout="@layout/fragment_blank" />
+
+    <fragment
+        android:id="@+id/options_food"
+        android:name="com.example.myhealth.ui.options.FoodFragment"
+        android:label="BP"
+        tools:layout="@layout/fragment_food" />
+
+</navigation>

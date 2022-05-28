@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/options_bp"
+        android:title="BP" />
+
+
+    <item
+        android:id="@+id/options_sugar"
+        android:title="Sugar" />
+
+    <item
+        android:id="@+id/options_medicine"
+        android:title="Medication"/>
+
+
+</menu>
